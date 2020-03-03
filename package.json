@@ -1,0 +1,12 @@
+{
+  "name": "hsd-one-zone-dns",
+  "dependencies": {
+    "bns": "^0.10.3",
+    "serve": "^11.3.0"
+  },
+  "main": "./index.js",
+  "author": {
+    "name": "Lewis Freiberg",
+    "email": "info@blackwattle.ad"
+  }
+}

@@ -1,0 +1,19 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Zone file for TLD “.laboratory"
+; Change 'laboratory." in the below file to your HSD name
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+$TTL    1800  ; (30 Min)
+@       IN      SOA     laboratory. hostmaster.laboratory. (
+2015091220      ; serial (timestamp)
+10800          ; refresh (3 Hours)
+3600           ; retry (1 Hour)
+604800         ; expire (28 days)
+1800 )        ; minimum (30 Min)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Replace the * & ns values with the server's IP
+; This will point all subdomains to the HTTP server on :80
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+@         IN    NS   ns.laboratory.      ; NS record is required
+ns        IN    A    165.22.195.251   ; A record to point to your NS server.
+@         IN    A    165.22.195.251   ; Point all subdomains to the HTTP server on :80
+*         IN    A    165.22.195.251   ; Point all subdomains to the HTTP server on :80
