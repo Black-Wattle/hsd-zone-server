@@ -81,7 +81,7 @@ laboratory.             1800    IN      SOA     laboratory. hostmaster.laborator
 
 **Web Server**
 
-Try loading the web server by pointing your browser to `http://loacalhost` . The server should return the page found in the `public/default` folder. 
+Try loading the web server by pointing your browser to `http://localhost` . The server should return the page found in the `public/default` folder. 
 
 ## HSD Configuration
 
