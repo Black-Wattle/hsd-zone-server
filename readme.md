@@ -85,27 +85,20 @@ Try loading the web server by pointing your browser to `http://localhost` . The 
 
 ## HSD Configuration
 
-At this point we have a DNS server providing responses to requests and files being served up but we aren't resolvable when asking a HSD node. In order to make this happen we need to add the following records to our domain configuration:
+At this point we have a DNS server providing responses to requests and files being served up but we aren't resolvable when asking a HSD node. In order to make this happen we need to add the following record to our domain configuration:
 
 ```
-Type:    NS 
-Value:   ns1.laboratory. // Replace with your HSD name
----
-Type:    GLUE4
-name     ns1.laboratory. // Replace with your HSD name
-address: 165.22.195.251  // Replace with your server IP
----
 Type:    GLUE4
 name:    laboratory.     // Replace with your HSD name
 address: 165.22.195.251  // Replace with your server IP
 
 ```
 
-Once you've submitted these to the network you will have to wait up to 32 confirmations for these to be added to the HSD master records list known as the Urkle Tree.
+Once you've submitted thi to the network you will have to wait up to 32 confirmations for this to be added to the HSD master records list known as the Urkle Tree.
 
 At that point you should be able to navigate to `http://hsd.<your domain>/` & `http://<your domain>` if you are using a HSD node are your DNS resolver! 
 
-For an easy way to get a HSD resolver to test follow the "**DNS-over-HTTPS server**" section of [https://easyhandshake.com/](https://easyhandshake.com/).
+For an easy way to get a HSD resolver to test follow the "**DNS-over-HTTPS server**" section of [https://easyhandshake.com/](https://easyhandshake.com/). Or you can use https://nextdns.io/ as your main DNS as they support resolving HSD domains. 
 
 Congratulations on your new domain space and website 🎉
 
