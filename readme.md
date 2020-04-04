@@ -89,7 +89,7 @@ At this point we have a DNS server providing responses to requests and files bei
 
 ```
 Type:    GLUE4
-name:    laboratory.     // Replace with your HSD name
+name:    ns.laboratory.     // Replace with "ns." + your HSD name
 address: 165.22.195.251  // Replace with your server IP
 
 ```
